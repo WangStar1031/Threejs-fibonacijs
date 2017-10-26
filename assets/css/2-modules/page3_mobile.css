@@ -1,0 +1,50 @@
+@media screen and (max-width: 768px) {
+
+  .line {
+    display: none;
+  }
+
+  .list li {
+      width: 50%;
+      display: block;      
+      height: 10px;
+      float:left;        
+      text-align: center;
+      margin-top: 150px;
+      
+
+  }
+  .list {  
+      height: 500px;
+      margin: auto;
+      min-width: 400px;
+  }
+
+  .list li:nth-child(5) {  
+      width:100%    ;
+  }
+
+  .list .image {
+      width: 120px;
+      height: 60px;
+      font-size: 17px;      
+      margin: auto;
+      background: black;
+      line-height: 60px;
+      position: relative;
+
+  }
+
+  .circle {
+      display: block;
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: #263241;
+      position: absolute;
+      border-radius: 10px;
+      left: 56px;
+      bottom: -14px;
+  }
+
+}

@@ -1,0 +1,257 @@
+
+.menu-button {
+  position: relative;
+  float: right;
+  background: #202020;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  margin: 1em;
+  cursor: pointer;
+}
+
+
+.bar-clicked:nth-child(1) {
+  left: 13px !important;
+    top: 47px !important;
+  -webkit-transform: rotate(-45deg); 
+    -ms-transform: rotate(-45deg);
+     transform: rotate(-45deg); 
+}
+
+.bar-clicked:nth-child(2) {
+  left: 15px !important;
+    top: 47px !important;
+  -webkit-transform: rotate(45deg); 
+    -ms-transform: rotate(45deg);
+     transform: rotate(45deg); 
+}
+
+.bar-clicked:nth-child(3) {
+    width: 0;
+}
+
+.bar {
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    background: #FFFFC2;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.bar:nth-child(1) {
+    left: 26px;
+    top: 36px;
+}
+.bar:nth-child(2) {
+    left: 25px;
+    top: 60px;
+}
+.bar:nth-child(3) {
+    left: 25px;
+    top: 85px;
+}
+
+
+.icon {
+  width: 80%;
+  height: 80%;
+  padding: 10%;
+}
+
+.mini {
+  position: absolute;
+  top: 3em;
+  right: 3em;
+  width: 0em;
+  height: 0em;
+  border-radius: 50%;
+  background: #202020;
+}
+
+.shrink-menu {
+  -webkit-animation: shrink-menu .5s 1;
+  animation: shrink-menu .5s 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode:        forwards;
+}
+
+@-webkit-keyframes shrink-menu {
+  0% {    width: 5em;    height: 5em;    margin: 1em;  }
+  100% {    width: 4em;    height: 4em;    margin: .5em;  }
+}
+
+@keyframes shrink-menu {
+  0% {    width: 5em;    height: 5em;    margin: 1em;  }
+  100% {    width: 4em;    height: 4em;    margin: .5em;  }
+}
+
+.grow-menu {
+  -webkit-animation: grow-menu .5s 1;
+  animation: grow-menu .5s 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode:        forwards;
+}
+
+@-webkit-keyframes grow-menu {
+  0% {
+    width: 4em;
+    height: 4em;
+    margin: .5em;
+  }
+  100% {
+    width: 5em;
+    height: 5em;
+    margin: 1em;
+  }
+}
+
+@keyframes grow-menu {
+  0% {
+    width: 4em;
+    height: 4em;
+    margin: .5em;
+  }
+  100% {
+    width: 5em;
+    height: 5em;
+    margin: 1em;
+  }
+}
+
+.left {
+  -webkit-animation: left .5s 1;
+  animation: left .5s 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode:        forwards;
+}
+
+.diag {
+  -webkit-animation: diag .5s 1;
+  animation: diag .5s 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode:        forwards;
+}
+
+.down {
+  -webkit-animation: down .5s 1;
+  animation: down .5s 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode:        forwards;
+}
+
+.last {
+  -webkit-animation: last .5s 1;
+  animation: last .5s 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode:        forwards;
+}
+
+.revLeft {
+  -webkit-animation: revLeft .5s 1;
+  animation: revLeft .5s 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode:        forwards;
+}
+
+.revDiag {
+  -webkit-animation: revDiag .5s 1;
+  animation: revDiag .5s 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode:        forwards;
+}
+
+.revDown {
+  -webkit-animation: revDown .5s 1;
+  animation: revDown .5s 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode:        forwards;
+}
+
+.revLast {
+  -webkit-animation: revLast .5s 1;
+  animation: revLast .5s 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode:        forwards;
+}
+
+@-webkit-keyframes left {
+  0% {    top: 3em;    right: 3em;    width: 0em;    height: 0em;  }
+  100% {    top: 0.5em;    right: 6em;    width: 2em;    height: 2em;  }
+}
+
+@keyframes left {
+  0% {    top: 3em;    right: 3em;    width: 0em;    height: 0em;  }
+  100% {  top: 0.5em;    right: 6em;    width: 2em;    height: 2em;  }
+}
+
+@-webkit-keyframes revLeft {
+  0% {  top: 0.5em;    right: 6em;    width: 2em;    height: 2em;  }
+  100% {    top: 3em;    right: 3em;    width: 0em;    height: 0em;  }
+}
+
+@keyframes revLeft {
+  0% {  top: 0.5em;    right: 6em;    width: 2em;    height: 2em;  }
+  100% {    top: 3em;    right: 3em;    width: 0em;    height: 0em;  }
+}
+
+@-webkit-keyframes diag {
+  0% {    top: 3em;    right: 3em;    width: 0em;    height: 0em;  }
+  100% {  top: 3em;    right: 5.5em;    width: 2em;    height: 2em;  }
+}
+
+@keyframes diag {
+  0% {    top: 3em;    right: 3em;    width: 0em;    height: 0em;  }
+  100% {  top: 3em;    right: 5.5em;    width: 2em;    height: 2em;  }
+}
+
+@-webkit-keyframes revDiag {
+  0% {  top: 3em;    right: 5.5em;    width: 2em;    height: 2em;  }
+  100% {    top: 3em;    right: 3em;    width: 0em;    height: 0em;  }
+}
+
+@keyframes revDiag {
+  0% {  top: 3em;    right: 5.5em;    width: 2em;    height: 2em;  }
+  100% {    top: 3em;    right: 3em;    width: 0em;    height: 0em;  }
+}
+
+@-webkit-keyframes down {
+  0% {    top: 3em;    right: 3em;    width: 0em;    height: 0em;  }
+  100% {  top: 4.5em;    right: 3.5em;    width: 2em;    height: 2em;  }
+}
+
+@keyframes down {
+  0% {    top: 3em;    right: 3em;    width: 0em;    height: 0em;  }
+  100% {  top: 4.5em;    right: 3.5em;    width: 2em;    height: 2em;  }
+}
+
+@-webkit-keyframes revDown {
+  0% {  top: 4.5em;    right: 3.5em;    width: 2em;    height: 2em;  }
+  100% {    top: 3em;    right: 3em;    width: 0em;    height: 0em;  }
+}
+
+@keyframes revDown {
+  0% {  top: 4.5em;    right: 3.5em;    width: 2em;    height: 2em;  }
+  100% {    top: 3em;    right: 3em;    width: 0em;    height: 0em;  }
+}
+
+@-webkit-keyframes last {
+  0% {    top: 3em;    right: 3em;    width: 0em;    height: 0em;  }
+  100% {  top: 5.5em;    right: 1em;    width: 2em;    height: 2em;  }
+}
+
+@keyframes last {
+  0% {    top: 3em;    right: 3em;    width: 0em;    height: 0em;  }
+  100% {  top: 5.5em;    right: 1em;    width: 2em;    height: 2em;  }
+}
+
+@-webkit-keyframes revLast {
+  0% {  top: 5.5em;    right: 1em;    width: 2em;    height: 2em;  }
+  100% {    top: 3em;    right: 3em;    width: 0em;    height: 0em;  }
+}
+
+@keyframes revLast {
+  0% {  top: 5.5em;    right: 1em;    width: 2em;    height: 2em;  }
+  100% {    top: 3em;    right: 3em;    width: 0em;    height: 0em;  }
+}

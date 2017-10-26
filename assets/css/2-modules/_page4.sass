@@ -1,0 +1,162 @@
+@import "page4_mobile";
+
+.container4  
+	position: relative
+	height: 100vh
+	width: 100%
+	max-width: 1360px
+	margin: 0 auto  
+	background: #7f839c
+	z-index: -1
+    overflow: hidden
+    
+
+
+@media screen and (min-width: 769px)
+  /*.right
+  	
+  	width: 60%
+  	height: 100%
+  	top: 0
+  	transform: translateX(70%)
+  	clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%)
+  	background: #7f839c*/
+
+  	
+  /*.left
+  	float: left	
+  	position: relative
+  	width: 60%
+  	height: 100%
+  	left: 0
+  	top: 0
+      background: yellow*/
+  	
+
+  	/*.left-img
+  		width: 100%
+  		height: 100%
+  		position: relative
+  		background-position: 50% 50%
+  		overflow: hidden
+  		
+  		background: 
+  			image: url(/assets/img/t-shirt.jpg)
+  			repeat: no-repeat
+  			position: center
+  			size: cover*/
+
+
+  /*.right-container  
+  	position: absolute
+  	margin-top: 5%
+      margin-left: 50%*/
+
+  /*.right-container img
+  	margin-left: 350%*/
+
+  .main     
+    height: 100vh 
+    z-index: 2
+    position: relative
+    overflow: hidden
+    
+
+  #left  
+    /*background: yellow*/
+    width: 55%
+
+
+  .left-img
+  		width: 100%
+  		height: 100vh
+  		position: relative
+  		background-position: 50% 50%
+  		overflow: hidden
+  		
+  		background: 
+  			image: url(/assets/img/t-shirt.jpg)
+  			repeat: no-repeat
+  			position: center
+  			size: cover
+
+  #right 
+    position: absolute
+    width: 64%
+    top: 0
+    height: 100%
+    left: 37%
+    background: #7f839c    
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%)
+    
+
+  .briefcase 
+     display: flex
+     justify-content: center
+     position: relative
+     z-index: 101
+
+  .briefcase img 
+    width: 20%
+    height: 10%
+    margin-top: 5%
+    transform: translateX(100%)
+     
+  .figures
+    /*position: relative*/
+    margin-top: 10vh
+    margin-left: 50%
+    /*transform: translate(50%, 10%)*/
+    text-align: center
+    z-index: 100
+    overflow: visible 
+    
+
+  .fig1
+    position: absolute
+    width: 33%
+    margin-left: -4%
+    animation: box 5s infinite ease-in-out 
+    animation-direction: alternate
+    z-index: 1000
+
+    
+  .fig2 
+    position: absolute
+    width: 58%
+    
+    margin-top: 5%
+    margin-left: -25%
+    /*transform: translate(-25%, -100%)*/  
+    animation: box2 5s infinite ease-in-out 
+    animation-direction: alternate
+    z-index: 1001
+     
+    
+   
+      
+    
+  @keyframes box
+    0%
+      transform: rotateZ(0deg)
+    100%
+      transform: rotateZ(-12deg)	
+
+  @keyframes box2
+    0%
+      transform: rotateZ(0deg)
+    100%
+      transform: rotateZ(12deg)
+
+
+  #js-app
+      position: absolute
+      left: 0
+      top: 0
+      z-index: 100
+
+
+@media screen and (max-width: 1100px) and (min-width: 769px)
+
+    .figures
+        margin-top: 20vh;

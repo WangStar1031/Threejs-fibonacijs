@@ -1,0 +1,37 @@
+#sketch-0{
+	width: 100%;
+}
+@media screen and (min-width: 769px) {
+
+	li.particleOver:before {
+		position: absolute;
+		top: 0;
+		margin: -.4em 0 0 -2.4em;
+		display: inline-block;
+		width: 1.5em;
+		height: 1em;	
+		content: url(/assets/img/star.svg);
+		
+		-webkit-animation: starOver .5s 1;
+		animation: starOver .5s 1;
+		-webkit-animation-fill-mode: forwards;
+		animation-fill-mode:        forwards;
+	}
+
+	@-webkit-keyframes starOver {
+		0% {	transform: rotate(0deg);	}
+		100% {	transform: rotate(360deg);	}
+	}
+
+	@keyframes starOver {
+		0% {	transform: rotate(0deg);	}
+		100% {	transform: rotate(360deg);	}
+	}
+}
+@media screen and (max-width: 768px) {
+	#sketch-0 {
+		transform: rotate(180deg);
+		top: 0px;
+	}
+
+}

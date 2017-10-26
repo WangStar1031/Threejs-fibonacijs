@@ -1,0 +1,258 @@
+@import "mini-menu";
+
+
+$introHeight: 358px
+$introMargin: 4h 
+
+
+
+.container
+	position: relative
+	height: 100vh
+	width: 100%
+	max-width: 1360px
+	margin: 0 auto
+	background : #DCE7E8
+    background : rgba(220, 231, 232, 1)
+    
+
+header
+	position: relative
+	height: 120px
+	/*background: red*/
+    
+
+
+	h1  
+		float: left
+		margin: 22px 0 0 39px
+		position: relative
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 136px
+		height: 136px
+		background: #333333
+
+		.logo-gt
+			position: relative
+			width: 80px
+			height: 80px
+			background: 
+				image: url(/assets/img/gt3.svg)
+				repeat: no-repeat
+				position: center
+
+
+
+.menu-burger
+	float: right
+	/*margin: 22px 39px 0 0px*/
+	margin-top: 2%
+	left: -2%
+	position: relative
+	width: 136px
+	height: 136px
+	background: #333333
+	border-radius: 50%
+	cursor: pointer
+
+	.bar
+		position: absolute
+		width: 70px
+		height: 3px
+		background: #FFFFC2
+		transition: all 300ms ease
+		
+		&:nth-child(1)
+			left: 34px
+			top: 38px
+		&:nth-child(2)
+			left: 34px
+			top: 68px
+			&:after
+				content: "";
+				position: absolute
+				left: 0px
+				top: 0px
+				width: 70px
+				height: 3px
+				background: #FFFFC2
+				transition: all 300ms ease
+				
+		&:nth-child(3)
+			right: 34px
+			top: 98px
+	&:hover
+		.bar
+			&:nth-child(1),
+			&:nth-child(3)
+				width: 0
+			&:nth-child(2)
+				transform: rotate(-45deg)
+				&:after
+					transform: rotate(-90deg)
+
+
+
+			
+nav
+	display: none
+	a
+		margin-left: 200px
+	    color: rgba(0,0,0,0.7)
+	font:
+		size: 14px
+		
+		
+
+
+.intro
+	position: absolute
+	clear: both
+	width: 745px
+	height: 358px
+	background-color: #1d1d1b
+    box-shadow: 10.5px 18.187px 21px 0px rgba(0, 0, 0, 0.75)
+    z-index: 2
+	margin-top: $introMargin
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	text-align: center
+	display: block	
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%)
+
+	
+	
+	
+/* start intro animation */
+
+
+.movie img 
+	width: 111px
+	height: 113px
+	animation: myMove2 5s 0s
+
+
+
+.lt-cube-grid 
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	margin: auto
+	width: 444px
+	height: 339px 
+	
+	
+	/*	background-color: aqua; in this place I can put images with text under main image */
+    /*	background-clip: content-box */
+    /*	padding: 10px*/
+	  
+
+.lt-cube-grid .lt-cube 
+	width: 111px
+	height: 113px	
+	animation: left-ScaleDelay 3.5s ease-in
+	float: left
+
+
+.lt-cube-grid .lt-cube1
+	
+	width: 111px
+	height: 113px
+	animation: lt-ScaleDelay 3.5s ease-in  
+	float: right
+
+.c1 img:hover  
+    filter: alpha(opacity=50)
+    opacity: 0
+    transition: opacity 2.2s ease-in-out
+	
+.c2 img:hover 
+	opacity: 0
+.c3 img:hover 
+	opacity: 0
+.c4 img:hover 
+	opacity: 0 
+.c5 img:hover 
+	opacity: 0
+.c6 img:hover 
+	opacity: 0
+.c7 img:hover 
+	opacity: 0
+.c8 img:hover 
+	opacity: 0
+.c9 img:hover 
+	opacity: 0 
+
+@keyframes left-ScaleDelay 
+	0%, 50%, 100% 
+		
+		transform: scale3D(0, 0, 0)
+		transform: skewX(90deg)
+		filter: blur(20px)	  	  
+	50% 
+		
+		transform: scale3D(0, 0, 1)
+		transform: skewX(50deg)
+		filter: blur(15px)
+	   
+	100% 
+		transform: scale3D(1, 1, 1)
+		transform: skewX(0deg)
+		filter: blur(0px)
+
+
+@keyframes lt-ScaleDelay 
+	0%, 50%, 100% 
+		transform: scale3D(0, 0, 0)
+		transform: skewX(-90deg)
+		filter: blur(20px)  
+	50%
+    
+		transform: scale3D(0, 0, 1)
+		transform: skewX(-50deg)
+		filter: blur(15px) 
+	  
+	100% 
+		transform: scale3D(1, 1, 1)
+		transform: skewX(0deg)
+		filter: blur(0px)
+
+
+@keyframes myMove2 
+	0% 
+		transform: rotateY(90deg) scale(0)
+		filter: brightness(20) 
+	20% 
+		transform: rotateY(60deg) scale(0.2)
+		filter: brightness(30)
+	59% 
+		transform: rotateY(40deg) scale(0.4)
+		filter: brightness(8)
+	60% 
+		transform: rotateY(20deg) scale(0.9)
+
+		filter: brightness(11)
+	100% 
+		transform: rotateY(0deg) scale(1)
+
+
+.text
+
+	font-size: 1em
+	margin-top: calc(#{$introHeight} + 8vh)
+	letter-spacing: 0.1em
+	line-height: 0.4em
+
+
+.con-right-menu
+	position: relative
+	display: block
+
+
+
+

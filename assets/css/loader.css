@@ -1,0 +1,74 @@
+#loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: white;
+}
+.loader {
+  height: 50px;
+  width: 50px;
+  background: #7F839C;
+  position: relative;
+  padding: 2px;
+  background-image: url(http://imageshack.com/a/img924/3841/oBkxJ9.png);
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: myrotate 10s infinite linear;
+}
+
+.corner {
+  height: 20px;
+  width: 20px;
+  border : 2px solid #7F839C;
+  position: absolute;
+  transition: 1s all;
+  animation: myscale 2s infinite linear;
+}
+
+.top-left {
+  top : -10%;
+  left: -10%;
+  border-bottom : 0;
+  border-right: 0;
+}
+.top-right {
+  top : -10%;
+  right: -10%;
+  border-bottom : 0;
+  border-left: 0;
+}
+.bottom-left {
+  bottom : -10%;
+  left: -10%;
+  border-top : 0;
+  border-right: 0;
+}
+.bottom-right {
+  bottom : -10%;
+  right: -10%;
+  border-top : 0;
+  border-left: 0;
+}
+
+@keyframes myrotate {
+  to {
+    transform: rotate(0deg);
+    
+  }
+  from {
+    transform: rotate(-360deg);
+  }
+}
+
+
+@keyframes myscale {
+  0%,100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.6);
+  }
+}
+

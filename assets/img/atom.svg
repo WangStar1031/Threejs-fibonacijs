@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-atom">
+              <g stroke-width=".1em" stroke-linecap="round" stroke="#444444" fill="none">
+                <circle r="1.35em" cx="50%" cy="50%" class="icon-atom_orbit"></circle>
+                <circle r="1.35em" cx="50%" cy="50%" class="icon-atom_orbit"></circle>
+                <circle r="1.35em" cx="50%" cy="50%" class="icon-atom_orbit"></circle>
+                <circle r=".25em" cx="50%" cy="50%"></circle>
+              </g>
+            </svg>
+      
